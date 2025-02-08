@@ -26,3 +26,16 @@ CUDA_VISIBLE_DEVICES=0 python demo_mamba.py --dataset='WHU_Hi_LongKou' --epoches
 ```
 ## Acknowledgment
 Our detection code is built upon [SpectralFormer](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer) and [Vmamba](https://github.com/MzeroMiko/VMamba). We are very grateful to all the contributors to these codebases.
+
+## Citation
+If you appreciate our work and find this repository helpful, please consider giving a citation:
+
+```bibtex
+@ARTICLE{s2mamba,
+  author={Wang, Guanchun and Zhang, Xiangrong and Peng, Zelin and Zhang, Tianyang and Jiao, Licheng},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={S2Mamba: A Spatial-spectral State Space Model for Hyperspectral Image Classification}, 
+  year={2025},
+  pages={1-1},
+  doi={10.1109/TGRS.2025.3530993}}
+```
