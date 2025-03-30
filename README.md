@@ -13,6 +13,8 @@ Download HSI datasets and put them into the `./data` directory. For example:
   './data/Houston.mat'
   './data/WHU-Hi-LongKou/WHU_Hi_LongKou.mat'
 ```
+Data download link: https://pan.baidu.com/s/18wTlU9ERczOfUo8WVoHVnA?pwd=aak6 
+Password: aak6
 ### Training and Testing
 ```Shell
 CUDA_VISIBLE_DEVICES=0 python demo_mamba.py --dataset='Indian' --epoches=400 --patches=7 --sess s2mamba --dropout 0.4 --lr 5e-4
