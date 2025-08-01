@@ -318,7 +318,7 @@ class BSS(nn.Module):
         B, C, H, W = x.shape
         L = H * W
         K = 2
-        xs = torch.cat([x, torch.flip(x, dims=[-1])], dim=1)
+        xs = torch.cat([x, torch.flip(x, dims=[-2])], dim=1)
         x_dbl = torch.einsum("b k d l, k c d -> b k c l", xs.view(B, K, -1, L), self.x_proj_weight_spectral)
         dts, Bs, Cs = torch.split(x_dbl, [self.dt_rank, self.d_state, self.d_state], dim=2)
         dts = torch.einsum("b k r l, k d r -> b k d l", dts.view(B, K, -1, L), self.dt_projs_weight_spectral)
